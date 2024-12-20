@@ -1,0 +1,2043 @@
+{
+  "data": {
+    "nodes": [
+      {
+        "node_id": "190d2b3dc3",
+        "fragments": [
+          {
+            "value": "### Definici\u00f3n de Generics"
+          },
+          {
+            "id": "ac3c86e3e5",
+            "value": "Hoy vamos a explorar la definici\u00f3n de Generics en",
+            "start": 0.0,
+            "end": 2.159
+          },
+          {
+            "id": "2b000f3109",
+            "value": "Java. Imagina que est\u00e1s construyendo el sistema",
+            "start": 2.252,
+            "end": 4.714
+          },
+          {
+            "id": "64ee75e57d",
+            "value": "ATM de JavaBank y necesitas gestionar tipos de",
+            "start": 4.934,
+            "end": 7.419
+          },
+          {
+            "id": "953984b55c",
+            "value": "cuenta de manera segura. Los Generics permiten que",
+            "start": 7.5,
+            "end": 10.275
+          },
+          {
+            "id": "96a34b5d58",
+            "value": "una clase, interfaz o m\u00e9todo operen con distintos",
+            "start": 10.368,
+            "end": 13.015
+          },
+          {
+            "id": "2c439a5555",
+            "value": "tipos de datos, asegurando la seguridad en tiempo",
+            "start": 13.084,
+            "end": 15.302
+          },
+          {
+            "id": "7d05ed308f",
+            "value": "de compilaci\u00f3n.",
+            "start": 15.348,
+            "end": 16.393
+          }
+        ]
+      },
+      {
+        "node_id": "e1a21e36eb",
+        "fragments": [
+          {
+            "id": "2c002566e7",
+            "value": "Imagina que construyes el sistema ATM de JavaBank",
+            "start": 16.418,
+            "end": 19.076999999999998
+          },
+          {
+            "id": "2579e863cf",
+            "value": "y necesitas gestionar tipos de cuenta de manera",
+            "start": 19.169999999999998,
+            "end": 21.213
+          },
+          {
+            "id": "ceeb1ccdbe",
+            "value": "segura. Los Generics permiten que una clase,",
+            "start": 21.294,
+            "end": 24.011
+          },
+          {
+            "id": "28a3e4c13c",
+            "value": "interfaz o m\u00e9todo operen con distintos tipos de",
+            "start": 24.115,
+            "end": 26.494999999999997
+          },
+          {
+            "id": "1a648e4ea6",
+            "value": "datos, asegurando la seguridad en tiempo de",
+            "start": 26.554,
+            "end": 28.945
+          },
+          {
+            "id": "b236bd063b",
+            "value": "compilaci\u00f3n. Esto es como tener una caja de",
+            "start": 29.015,
+            "end": 31.58
+          },
+          {
+            "id": "338b4e666e",
+            "value": "herramientas que se adapta a cualquier tipo de",
+            "start": 31.627,
+            "end": 33.461
+          },
+          {
+            "id": "714f5bc0b5",
+            "value": "tornillo o tuerca que necesites ajustar.",
+            "start": 33.554,
+            "end": 36.573
+          }
+        ]
+      },
+      {
+        "node_id": "fb2dd17def",
+        "fragments": [
+          {
+            "id": "f502cb10db",
+            "value": "JavaBank est\u00e1 desarrollando un nuevo sistema de",
+            "start": 36.598,
+            "end": 38.85
+          },
+          {
+            "id": "eb11bd96b4",
+            "value": "gesti\u00f3n de cuentas y necesita tu ayuda para",
+            "start": 38.92,
+            "end": 40.894
+          },
+          {
+            "id": "4f56bc74ad",
+            "value": "implementar una caracter\u00edstica segura y flexible.",
+            "start": 40.94,
+            "end": 43.413
+          },
+          {
+            "id": "4a96559ec3",
+            "value": "Se requiere que desarrolles una clase gen\u00e9rica",
+            "start": 43.413999999999994,
+            "end": 46.072
+          },
+          {
+            "id": "7489e917ef",
+            "value": "`CuentaBancaria` que pueda manejar distintos tipos",
+            "start": 46.339,
+            "end": 49.019999999999996
+          },
+          {
+            "id": "05a2be623b",
+            "value": "de cuentas (por ejemplo, `CuentaAhorro`,",
+            "start": 49.067,
+            "end": 52.074
+          },
+          {
+            "id": "00f518db09",
+            "value": "`CuentaCorriente`, etc.). La clase",
+            "start": 52.213,
+            "end": 54.698
+          },
+          {
+            "id": "d43e1090d4",
+            "value": "`CuentaBancaria` debe tener un m\u00e9todo",
+            "start": 54.744,
+            "end": 56.753
+          },
+          {
+            "id": "06eca9261b",
+            "value": "`mostrarDetalles` que imprima los detalles",
+            "start": 56.938,
+            "end": 59.26
+          },
+          {
+            "id": "1643ab9041",
+            "value": "espec\u00edficos del tipo de cuenta que maneja. Adem\u00e1s,",
+            "start": 59.352999999999994,
+            "end": 62.407
+          },
+          {
+            "id": "83b042e922",
+            "value": "implementa una clase `JavaBank` con un m\u00e9todo",
+            "start": 62.662,
+            "end": 64.833
+          },
+          {
+            "id": "57b572e680",
+            "value": "`main` donde crees instancias de `CuentaBancaria`",
+            "start": 64.90299999999999,
+            "end": 67.457
+          },
+          {
+            "id": "242dc9f554",
+            "value": "para diferentes tipos de cuentas y llames al",
+            "start": 67.527,
+            "end": 69.512
+          },
+          {
+            "id": "d7d256186d",
+            "value": "m\u00e9todo `mostrarDetalles` para cada una de ellas.",
+            "start": 69.60499999999999,
+            "end": 73.1
+          }
+        ]
+      },
+      {
+        "node_id": "64d1cd5be3",
+        "fragments": [
+          {
+            "value": "#### Clases Gen\u00e9ricas"
+          },
+          {
+            "id": "ed36894c1a",
+            "value": "Ahora, hablemos de las Clases Gen\u00e9ricas. Estas son",
+            "start": 73.125,
+            "end": 76.004
+          },
+          {
+            "id": "dde8ce8e7d",
+            "value": "fundamentales cuando necesitas una clase que pueda",
+            "start": 76.097,
+            "end": 78.233
+          },
+          {
+            "id": "0daf1dc4e2",
+            "value": "manejar distintos tipos de datos.",
+            "start": 78.303,
+            "end": 80.32300000000001
+          }
+        ]
+      },
+      {
+        "node_id": "51277f75fa",
+        "fragments": [
+          {
+            "id": "0792131842",
+            "value": "Si necesitas una clase para representar una",
+            "start": 80.34800000000001,
+            "end": 82.34500000000001
+          },
+          {
+            "id": "40535c9f6d",
+            "value": "entrada en un sistema de mapeo, Generics permiten",
+            "start": 82.39100000000002,
+            "end": 85.07300000000001
+          },
+          {
+            "id": "d0d04593fa",
+            "value": "que esta clase maneje distintos tipos de datos.",
+            "start": 85.15500000000002,
+            "end": 87.43
+          },
+          {
+            "id": "8a164b1e2c",
+            "value": "Por ejemplo, podr\u00edas tener una clase `Entry` que",
+            "start": 87.43100000000001,
+            "end": 90.64600000000002
+          },
+          {
+            "id": "a796f1c6cf",
+            "value": "maneje tanto cadenas de texto como n\u00fameros,",
+            "start": 90.72700000000002,
+            "end": 92.793
+          },
+          {
+            "id": "507547d5a0",
+            "value": "dependiendo de lo que necesites almacenar.",
+            "start": 93.049,
+            "end": 95.62600000000002
+          }
+        ]
+      },
+      {
+        "node_id": "c9b6eeca4c",
+        "fragments": [
+          {
+            "id": "096d9c299e",
+            "value": "En esta clase, estamos definiendo una clase",
+            "start": 95.65100000000002,
+            "end": 97.53200000000002
+          },
+          {
+            "id": "08548eb166",
+            "value": "gen\u00e9rica llamada `Entry` que puede manejar dos",
+            "start": 97.60100000000003,
+            "end": 99.99300000000002
+          },
+          {
+            "id": "f99b6f1a08",
+            "value": "tipos de datos, `K` y `V`. Estos representan la",
+            "start": 100.07400000000003,
+            "end": 103.79000000000002
+          },
+          {
+            "id": "c102a590d8",
+            "value": "clave y el valor de una entrada, respectivamente.",
+            "start": 103.89400000000002,
+            "end": 106.11200000000002
+          },
+          {
+            "id": "dc97d49593",
+            "value": "La clase tiene dos variables privadas, `key` y",
+            "start": 106.11300000000003,
+            "end": 109.26900000000002
+          },
+          {
+            "id": "2ea088a197",
+            "value": "`value`, que almacenan estos datos. El constructor",
+            "start": 109.33900000000003,
+            "end": 112.28800000000003
+          },
+          {
+            "id": "36a7b0d3d2",
+            "value": "de la clase toma dos par\u00e1metros, `key` y `value`,",
+            "start": 112.35800000000003,
+            "end": 115.36500000000002
+          },
+          {
+            "id": "31b5bf9176",
+            "value": "y los asigna a las variables correspondientes.",
+            "start": 115.59700000000002,
+            "end": 117.76800000000003
+          },
+          {
+            "id": "a3edd5217e",
+            "value": "Tambi\u00e9n hay m\u00e9todos para obtener y establecer",
+            "start": 118.16300000000003,
+            "end": 119.99700000000003
+          },
+          {
+            "id": "8fc3ded6f9",
+            "value": "estos valores, `getKey`, `getValue`, `setKey`, y",
+            "start": 120.06700000000002,
+            "end": 123.46800000000002
+          },
+          {
+            "id": "13116e58bc",
+            "value": "`setValue`. Esta clase es \u00fatil para crear pares de",
+            "start": 123.53800000000003,
+            "end": 126.46400000000003
+          },
+          {
+            "id": "17d969abc8",
+            "value": "datos, como un nombre y una calificaci\u00f3n, de",
+            "start": 126.53300000000003,
+            "end": 128.35600000000002
+          },
+          {
+            "id": "3967433124",
+            "value": "manera segura y flexible.",
+            "start": 128.437,
+            "end": 130.10900000000004
+          }
+        ]
+      },
+      {
+        "node_id": "96014721b1",
+        "fragments": [
+          {
+            "id": "92a00ce91c",
+            "value": "Con una clase no gen\u00e9rica y usando `Object`,",
+            "start": 130.13400000000004,
+            "end": 132.32800000000003
+          },
+          {
+            "id": "015ba8202f",
+            "value": "habr\u00eda *casts* en tiempo de ejecuci\u00f3n y errores",
+            "start": 132.54900000000004,
+            "end": 134.89400000000003
+          },
+          {
+            "id": "d62fc7ddf1",
+            "value": "como `ClassCastException`. Esto es como intentar",
+            "start": 134.97500000000005,
+            "end": 137.92400000000004
+          },
+          {
+            "id": "6feb1c0262",
+            "value": "encajar una pieza cuadrada en un agujero redondo,",
+            "start": 137.98200000000006,
+            "end": 140.22300000000004
+          },
+          {
+            "id": "7184e9034b",
+            "value": "lo que puede llevar a errores inesperados.",
+            "start": 140.52500000000003,
+            "end": 142.85900000000004
+          }
+        ]
+      },
+      {
+        "node_id": "f77bb42cea",
+        "fragments": [
+          {
+            "id": "aadefd4399",
+            "value": "Aqu\u00ed tenemos una clase llamada `NonGenericEntry`",
+            "start": 142.88400000000004,
+            "end": 145.36900000000006
+          },
+          {
+            "id": "a428f0aeed",
+            "value": "que no utiliza Generics. En su lugar, utiliza el",
+            "start": 145.57800000000003,
+            "end": 148.35200000000003
+          },
+          {
+            "id": "f895e8d27b",
+            "value": "tipo `Object` para almacenar la clave y el valor.",
+            "start": 148.44500000000005,
+            "end": 150.87200000000004
+          },
+          {
+            "id": "8e99989de7",
+            "value": "Esto significa que puede almacenar cualquier tipo",
+            "start": 150.87300000000005,
+            "end": 153.42600000000004
+          },
+          {
+            "id": "76481c0f83",
+            "value": "de datos, pero a costa de la seguridad del tipo en",
+            "start": 153.48400000000004,
+            "end": 156.00300000000004
+          },
+          {
+            "id": "602f16a05b",
+            "value": "tiempo de compilaci\u00f3n. El constructor toma dos",
+            "start": 156.09600000000003,
+            "end": 158.69700000000003
+          },
+          {
+            "id": "2f6128d855",
+            "value": "par\u00e1metros de tipo `Object` y los asigna a las",
+            "start": 158.80100000000004,
+            "end": 160.92600000000004
+          },
+          {
+            "id": "3e6f479600",
+            "value": "variables `key` y `value`. Los m\u00e9todos `getKey`,",
+            "start": 160.99600000000004,
+            "end": 163.74700000000004
+          },
+          {
+            "id": "dfb505a7cc",
+            "value": "`getValue`, `setKey`, y `setValue` permiten",
+            "start": 163.82800000000003,
+            "end": 166.53400000000005
+          },
+          {
+            "id": "25a5e9a16b",
+            "value": "obtener y establecer estos valores. Sin embargo,",
+            "start": 166.60300000000004,
+            "end": 169.41200000000003
+          },
+          {
+            "id": "f0b0184192",
+            "value": "al usar `Object`, se requiere realizar",
+            "start": 169.55200000000005,
+            "end": 171.58400000000003
+          },
+          {
+            "id": "dd6296834e",
+            "value": "conversiones de tipo expl\u00edcitas al recuperar los",
+            "start": 171.66500000000005,
+            "end": 173.89400000000003
+          },
+          {
+            "id": "3de205753c",
+            "value": "datos, lo que puede llevar a errores en tiempo de",
+            "start": 173.94000000000005,
+            "end": 176.26200000000006
+          },
+          {
+            "id": "e8fb84a0df",
+            "value": "ejecuci\u00f3n.",
+            "start": 176.35500000000005,
+            "end": 177.62100000000004
+          }
+        ]
+      },
+      {
+        "node_id": "d51c16f88f",
+        "fragments": [
+          {
+            "id": "6d4370cfc4",
+            "value": "Usar la clase gen\u00e9rica `Entry` te permite evitar",
+            "start": 177.64600000000004,
+            "end": 180.31600000000003
+          },
+          {
+            "id": "4c377191f3",
+            "value": "estos problemas, asegurando que cada pieza encaje",
+            "start": 180.38600000000005,
+            "end": 182.80100000000004
+          },
+          {
+            "id": "e783cc2f4a",
+            "value": "perfectamente en su lugar.",
+            "start": 182.90500000000003,
+            "end": 184.89100000000005
+          }
+        ]
+      },
+      {
+        "node_id": "bf69e3ceea",
+        "fragments": [
+          {
+            "id": "fe15d5a416",
+            "value": "En este fragmento de c\u00f3digo, estamos creando",
+            "start": 184.91600000000005,
+            "end": 187.13400000000004
+          },
+          {
+            "id": "d8cc5a5089",
+            "value": "instancias de la clase `Entry` utilizando",
+            "start": 187.19200000000006,
+            "end": 189.47900000000004
+          },
+          {
+            "id": "040633b161",
+            "value": "Generics. La primera instancia, `grade`, almacena",
+            "start": 189.56000000000006,
+            "end": 192.67100000000005
+          },
+          {
+            "id": "7a8beb5576",
+            "value": "un par de datos donde la clave es un `String`",
+            "start": 192.71800000000005,
+            "end": 194.71500000000006
+          },
+          {
+            "id": "6fd6be6919",
+            "value": "(&quot;Alice&quot;) y el valor es un `Integer`",
+            "start": 194.76100000000005,
+            "end": 197.30400000000006
+          },
+          {
+            "id": "7d9e8b41cb",
+            "value": "(85). La segunda instancia, `student`, almacena un",
+            "start": 197.50100000000006,
+            "end": 201.25100000000006
+          },
+          {
+            "id": "f402785067",
+            "value": "par de datos donde tanto la clave como el valor",
+            "start": 201.33200000000005,
+            "end": 203.24800000000005
+          },
+          {
+            "id": "e656b5eee8",
+            "value": "son `String` (&quot;Alice&quot; y &quot;Computer",
+            "start": 203.34100000000007,
+            "end": 208.25200000000007
+          },
+          {
+            "id": "78e1d487ce",
+            "value": "Science&quot;). Esto demuestra c\u00f3mo los Generics",
+            "start": 208.34500000000006,
+            "end": 210.79400000000004
+          },
+          {
+            "id": "df6df87364",
+            "value": "permiten crear instancias de la misma clase con",
+            "start": 210.88700000000006,
+            "end": 212.90700000000004
+          },
+          {
+            "id": "cfc0cc5e92",
+            "value": "diferentes tipos de datos, asegurando la seguridad",
+            "start": 212.96500000000006,
+            "end": 215.61300000000006
+          },
+          {
+            "id": "360805e62c",
+            "value": "del tipo en tiempo de compilaci\u00f3n.",
+            "start": 215.67100000000005,
+            "end": 217.51700000000005
+          }
+        ]
+      },
+      {
+        "node_id": "ed400c7b28",
+        "fragments": [
+          {
+            "value": "#### M\u00e9todos Gen\u00e9ricos"
+          },
+          {
+            "id": "881687a9d9",
+            "value": "Pasemos a los M\u00e9todos Gen\u00e9ricos. Estos tambi\u00e9n son",
+            "start": 217.54200000000006,
+            "end": 220.00300000000007
+          },
+          {
+            "id": "57bb1dac8e",
+            "value": "esenciales para aceptar par\u00e1metros de diferentes",
+            "start": 220.08500000000006,
+            "end": 222.12800000000007
+          },
+          {
+            "id": "6e8ceb1b95",
+            "value": "tipos.",
+            "start": 222.19800000000006,
+            "end": 223.06800000000007
+          }
+        ]
+      },
+      {
+        "node_id": "33b1a8a61b",
+        "fragments": [
+          {
+            "id": "4c602a59d5",
+            "value": "Generics tambi\u00e9n se usan en m\u00e9todos para aceptar",
+            "start": 223.09300000000007,
+            "end": 225.40300000000008
+          },
+          {
+            "id": "8a54f9f7c6",
+            "value": "par\u00e1metros de diferentes tipos. Esto es como tener",
+            "start": 225.49600000000007,
+            "end": 228.1670000000001
+          },
+          {
+            "id": "c5e3c413cc",
+            "value": "una llave inglesa ajustable que se adapta a",
+            "start": 228.23600000000008,
+            "end": 230.08200000000008
+          },
+          {
+            "id": "a60c85914c",
+            "value": "cualquier tama\u00f1o de tuerca.",
+            "start": 230.15200000000007,
+            "end": 231.87000000000006
+          }
+        ]
+      },
+      {
+        "node_id": "adce0d955f",
+        "fragments": [
+          {
+            "id": "25ee2ce21e",
+            "value": "Este m\u00e9todo gen\u00e9rico, `printArray`, acepta un",
+            "start": 231.89500000000007,
+            "end": 235.04100000000005
+          },
+          {
+            "id": "907ca20dd0",
+            "value": "arreglo de cualquier tipo `T` y lo imprime",
+            "start": 235.12300000000008,
+            "end": 237.50300000000007
+          },
+          {
+            "id": "cfa8a5deb8",
+            "value": "elemento por elemento. La `T` entre los signos de",
+            "start": 237.56100000000006,
+            "end": 240.35900000000007
+          },
+          {
+            "id": "c05ee85825",
+            "value": "menor y mayor que indica que este m\u00e9todo es",
+            "start": 240.44000000000005,
+            "end": 242.55300000000005
+          },
+          {
+            "id": "2613b0c538",
+            "value": "gen\u00e9rico y puede trabajar con cualquier tipo de",
+            "start": 242.64600000000007,
+            "end": 245.10700000000006
+          },
+          {
+            "id": "59741bf982",
+            "value": "datos. Al iterar sobre el arreglo, cada elemento",
+            "start": 245.16500000000008,
+            "end": 248.28800000000007
+          },
+          {
+            "id": "e38f4e1fe7",
+            "value": "se imprime en la consola. Este m\u00e9todo es un",
+            "start": 248.36900000000006,
+            "end": 250.71500000000006
+          },
+          {
+            "id": "de585990d0",
+            "value": "ejemplo de c\u00f3mo los m\u00e9todos gen\u00e9ricos pueden",
+            "start": 250.79600000000008,
+            "end": 252.61900000000006
+          },
+          {
+            "id": "a83aafa50a",
+            "value": "simplificar la reutilizaci\u00f3n del c\u00f3digo al",
+            "start": 252.71100000000007,
+            "end": 255.23100000000005
+          },
+          {
+            "id": "ea5edd94d6",
+            "value": "permitir que un solo m\u00e9todo maneje m\u00faltiples tipos",
+            "start": 255.33500000000006,
+            "end": 258.22600000000006
+          },
+          {
+            "id": "5191c1366a",
+            "value": "de datos.",
+            "start": 258.28400000000005,
+            "end": 259.34100000000007
+          }
+        ]
+      },
+      {
+        "node_id": "2b4bbe2343",
+        "fragments": [
+          {
+            "id": "7b666e8e56",
+            "value": "Comparado con un m\u00e9todo no gen\u00e9rico que",
+            "start": 259.36600000000004,
+            "end": 261.15400000000005
+          },
+          {
+            "id": "8a0cb3b7d2",
+            "value": "necesitar\u00eda varias versiones para distintos tipos,",
+            "start": 261.22400000000005,
+            "end": 263.85900000000004
+          },
+          {
+            "id": "4e8edc8f2f",
+            "value": "los m\u00e9todos gen\u00e9ricos simplifican la reutilizaci\u00f3n",
+            "start": 264.16100000000006,
+            "end": 266.59900000000005
+          },
+          {
+            "id": "8c38fd5aca",
+            "value": "del c\u00f3digo.",
+            "start": 266.65700000000004,
+            "end": 267.77200000000005
+          }
+        ]
+      },
+      {
+        "node_id": "8eb077153f",
+        "fragments": [
+          {
+            "id": "ee5effafc6",
+            "value": "Aqu\u00ed tenemos dos m\u00e9todos, `printStringArray` y",
+            "start": 267.797,
+            "end": 270.56
+          },
+          {
+            "id": "eee45b644e",
+            "value": "`printIntegerArray`, que imprimen los elementos de",
+            "start": 270.63000000000005,
+            "end": 273.161
+          },
+          {
+            "id": "b35b298eba",
+            "value": "un arreglo de `String` y `Integer`,",
+            "start": 273.20700000000005,
+            "end": 274.809
+          },
+          {
+            "id": "1ec8b036cb",
+            "value": "respectivamente. Cada m\u00e9todo itera sobre su",
+            "start": 274.96000000000004,
+            "end": 277.689
+          },
+          {
+            "id": "a7dce69daf",
+            "value": "arreglo y imprime cada elemento en la consola.",
+            "start": 277.75800000000004,
+            "end": 280.09200000000004
+          },
+          {
+            "id": "677bbcdf50",
+            "value": "Aunque estos m\u00e9todos son espec\u00edficos para sus",
+            "start": 280.093,
+            "end": 282.73900000000003
+          },
+          {
+            "id": "304a406dff",
+            "value": "tipos de datos, podr\u00edan ser reemplazados por un",
+            "start": 282.809,
+            "end": 285.00300000000004
+          },
+          {
+            "id": "874e98518c",
+            "value": "solo m\u00e9todo gen\u00e9rico, como `printArray`, para",
+            "start": 285.07300000000004,
+            "end": 287.836
+          },
+          {
+            "id": "838d9263a7",
+            "value": "reducir la duplicaci\u00f3n de c\u00f3digo y mejorar la",
+            "start": 287.94000000000005,
+            "end": 289.91400000000004
+          },
+          {
+            "id": "a6140f03c9",
+            "value": "flexibilidad.",
+            "start": 289.995,
+            "end": 291.435
+          }
+        ]
+      },
+      {
+        "node_id": "cf1482b773",
+        "fragments": [
+          {
+            "id": "c27012e697",
+            "value": "\u00bfNotas c\u00f3mo los m\u00e9todos gen\u00e9ricos simplifican la",
+            "start": 291.46,
+            "end": 293.74699999999996
+          },
+          {
+            "id": "59bf18e42e",
+            "value": "reutilizaci\u00f3n del c\u00f3digo? Es como tener una",
+            "start": 293.84,
+            "end": 296.255
+          },
+          {
+            "id": "925b88a93a",
+            "value": "herramienta universal que se adapta a cualquier",
+            "start": 296.301,
+            "end": 298.217
+          },
+          {
+            "id": "1db45f1e6f",
+            "value": "situaci\u00f3n.",
+            "start": 298.298,
+            "end": 299.587
+          }
+        ]
+      },
+      {
+        "node_id": "72dea65fef",
+        "fragments": [
+          {
+            "value": "#### Comodines (Wildcards)"
+          },
+          {
+            "id": "0e323f99bf",
+            "value": "Ahora, exploremos los Comodines (Wildcards). Estos",
+            "start": 299.61199999999997,
+            "end": 302.712
+          },
+          {
+            "id": "59df3d7dfd",
+            "value": "ofrecen una flexibilidad adicional en el uso de",
+            "start": 302.816,
+            "end": 304.96399999999994
+          },
+          {
+            "id": "e44360091e",
+            "value": "Generics.",
+            "start": 305.034,
+            "end": 305.69599999999997
+          }
+        ]
+      },
+      {
+        "node_id": "e2c9ec013c",
+        "fragments": [
+          {
+            "id": "6bd021f434",
+            "value": "Los comodines (`?`) permiten mayor flexibilidad.",
+            "start": 305.72099999999995,
+            "end": 308.40299999999996
+          },
+          {
+            "id": "0ecc79f227",
+            "value": "Existen comodines para l\u00edmites superiores e",
+            "start": 308.40399999999994,
+            "end": 310.95699999999994
+          },
+          {
+            "id": "356493d147",
+            "value": "inferiores. Esto es como tener una regla que puede",
+            "start": 311.01499999999993,
+            "end": 313.59299999999996
+          },
+          {
+            "id": "3ae49c0e67",
+            "value": "medir tanto en pulgadas como en cent\u00edmetros.",
+            "start": 313.6619999999999,
+            "end": 316.2629999999999
+          }
+        ]
+      },
+      {
+        "node_id": "1ce9f958d3",
+        "fragments": [
+          {
+            "id": "69f7314738",
+            "value": "En este fragmento de c\u00f3digo, estamos utilizando",
+            "start": 316.2879999999999,
+            "end": 318.4359999999999
+          },
+          {
+            "id": "e6454a7b5b",
+            "value": "comodines en listas gen\u00e9ricas. La lista",
+            "start": 318.5059999999999,
+            "end": 320.8159999999999
+          },
+          {
+            "id": "05e2300833",
+            "value": "`numberList` utiliza un comod\u00edn de l\u00edmite superior",
+            "start": 320.95499999999987,
+            "end": 323.3239999999999
+          },
+          {
+            "id": "2af4c5b483",
+            "value": "(`? extends Number`), lo que significa que puede",
+            "start": 323.3249999999999,
+            "end": 329.4889999999999
+          },
+          {
+            "id": "15a31035dc",
+            "value": "contener cualquier tipo que sea un subtipo de",
+            "start": 329.5579999999999,
+            "end": 331.4849999999999
+          },
+          {
+            "id": "a3a6fcd82e",
+            "value": "`Number`, como `Integer` o `Double`. La lista",
+            "start": 331.5549999999999,
+            "end": 334.5509999999999
+          },
+          {
+            "id": "23a92c11d0",
+            "value": "`superIntegerList` utiliza un comod\u00edn de l\u00edmite",
+            "start": 334.5969999999999,
+            "end": 336.8609999999999
+          },
+          {
+            "id": "3e1cc11a91",
+            "value": "inferior (`? super Integer`), lo que significa que",
+            "start": 336.9069999999999,
+            "end": 342.4799999999999
+          },
+          {
+            "id": "06dc3cf67b",
+            "value": "puede contener cualquier tipo que sea un supertipo",
+            "start": 342.5609999999999,
+            "end": 344.7559999999999
+          },
+          {
+            "id": "cdbe06c9d2",
+            "value": "de `Integer`, como `Number` o `Object`. Estos",
+            "start": 344.8019999999999,
+            "end": 347.9139999999999
+          },
+          {
+            "id": "c6aa786139",
+            "value": "comodines proporcionan flexibilidad adicional al",
+            "start": 347.9949999999999,
+            "end": 350.2009999999999
+          },
+          {
+            "id": "631518ecda",
+            "value": "trabajar con colecciones gen\u00e9ricas.",
+            "start": 350.2819999999999,
+            "end": 352.3259999999999
+          }
+        ]
+      },
+      {
+        "node_id": "ae76dd899e",
+        "fragments": [
+          {
+            "id": "96b32bbbc6",
+            "value": "El primer caso permite obtener elementos de la",
+            "start": 352.3509999999999,
+            "end": 354.38299999999987
+          },
+          {
+            "id": "5a6b2bb781",
+            "value": "lista que son subtipos de `Number`. El segundo",
+            "start": 354.4639999999999,
+            "end": 356.8909999999999
+          },
+          {
+            "id": "3a5e7a325d",
+            "value": "permite agregar elementos que sean subtipos de",
+            "start": 356.9829999999999,
+            "end": 358.9799999999999
+          },
+          {
+            "id": "58fea3791f",
+            "value": "`Integer`. Es como tener una caja que puede",
+            "start": 359.0379999999999,
+            "end": 361.2909999999999
+          },
+          {
+            "id": "2e31504d2c",
+            "value": "contener cualquier tipo de fruta, pero solo puedes",
+            "start": 361.3719999999999,
+            "end": 363.83299999999986
+          },
+          {
+            "id": "987ffd9520",
+            "value": "agregar manzanas.",
+            "start": 363.9259999999999,
+            "end": 365.3079999999999
+          }
+        ]
+      },
+      {
+        "node_id": "2410e2ab28",
+        "fragments": [
+          {
+            "id": "3b7cb10bdb",
+            "value": "Este m\u00e9todo, `processNumberList`, acepta una lista",
+            "start": 365.33299999999986,
+            "end": 368.26999999999987
+          },
+          {
+            "id": "ca60835f91",
+            "value": "de cualquier tipo que sea un subtipo de `Number`,",
+            "start": 368.31699999999984,
+            "end": 370.39499999999987
+          },
+          {
+            "id": "63757d862f",
+            "value": "gracias al comod\u00edn de l\u00edmite superior (`? extends",
+            "start": 370.7429999999999,
+            "end": 377.12899999999985
+          },
+          {
+            "id": "c8189454d2",
+            "value": "Number`). El m\u00e9todo itera sobre la lista e imprime",
+            "start": 377.22199999999987,
+            "end": 380.61199999999985
+          },
+          {
+            "id": "17579ff0b0",
+            "value": "cada n\u00famero en la consola. Este enfoque permite",
+            "start": 380.70499999999987,
+            "end": 383.27099999999984
+          },
+          {
+            "id": "a828d94304",
+            "value": "procesar listas de diferentes tipos num\u00e9ricos,",
+            "start": 383.33999999999986,
+            "end": 385.41899999999987
+          },
+          {
+            "id": "e4c23984c5",
+            "value": "como `Integer` o `Double`, con un solo m\u00e9todo,",
+            "start": 385.48799999999983,
+            "end": 388.25099999999986
+          },
+          {
+            "id": "d20b76d3db",
+            "value": "demostrando la flexibilidad de los comodines en",
+            "start": 388.33299999999986,
+            "end": 390.32999999999987
+          },
+          {
+            "id": "e44360091e",
+            "value": "Generics.",
+            "start": 390.41099999999983,
+            "end": 391.43199999999985
+          }
+        ]
+      },
+      {
+        "node_id": "386e1c5e3c",
+        "fragments": [
+          {
+            "value": "#### Erasure de Tipos (Type Erasure)"
+          },
+          {
+            "id": "fe3b513d81",
+            "value": "Finalmente, hablemos de la Erasure de Tipos (Type",
+            "start": 391.4569999999998,
+            "end": 394.1039999999998
+          },
+          {
+            "id": "16afdda6d8",
+            "value": "Erasure). Este es un concepto crucial para",
+            "start": 394.2199999999998,
+            "end": 396.47299999999984
+          },
+          {
+            "id": "61c706df18",
+            "value": "entender c\u00f3mo funcionan los Generics en Java.",
+            "start": 396.51899999999983,
+            "end": 399.0729999999998
+          }
+        ]
+      },
+      {
+        "node_id": "555c565738",
+        "fragments": [
+          {
+            "id": "68795add23",
+            "value": "Java usa Erasure de Tipos para remover informaci\u00f3n",
+            "start": 399.0979999999998,
+            "end": 401.66399999999976
+          },
+          {
+            "id": "9b6a09e8b9",
+            "value": "de tipos en tiempo de compilaci\u00f3n, permitiendo",
+            "start": 401.7219999999998,
+            "end": 404.0319999999998
+          },
+          {
+            "id": "45626bdfbc",
+            "value": "compatibilidad con versiones anteriores. Por",
+            "start": 404.1019999999998,
+            "end": 406.50499999999977
+          },
+          {
+            "id": "09711a95c9",
+            "value": "ejemplo, `List<Integer&amp;gt` se convierte en",
+            "start": 406.56299999999976,
+            "end": 409.3959999999998
+          },
+          {
+            "id": "d86a1dc6e0",
+            "value": "`List` en tiempo de ejecuci\u00f3n. Esto es como tener",
+            "start": 409.4419999999998,
+            "end": 411.9959999999998
+          },
+          {
+            "id": "692f2debb1",
+            "value": "un guion que se adapta a diferentes actores sin",
+            "start": 412.0779999999998,
+            "end": 414.4339999999998
+          },
+          {
+            "id": "e8fab0422e",
+            "value": "cambiar la historia.",
+            "start": 414.5159999999998,
+            "end": 415.7229999999998
+          }
+        ]
+      },
+      {
+        "node_id": "632bf4f724",
+        "fragments": [
+          {
+            "id": "557a4f9fe7",
+            "value": "Esto implica algunas limitaciones que debemos",
+            "start": 415.74799999999976,
+            "end": 417.72199999999975
+          },
+          {
+            "id": "570b83d828",
+            "value": "considerar al dise\u00f1ar nuestros sistemas.",
+            "start": 417.80299999999977,
+            "end": 420.01999999999975
+          }
+        ]
+      },
+      {
+        "node_id": "2a5a616311",
+        "fragments": [
+          {
+            "id": "1578268a1c",
+            "value": "En primer lugar, no se pueden crear instancias de",
+            "start": 420.04499999999973,
+            "end": 422.1229999999997
+          },
+          {
+            "id": "c6e0ade75d",
+            "value": "tipos gen\u00e9ricos directamente. Es como intentar",
+            "start": 422.2159999999997,
+            "end": 424.76999999999975
+          },
+          {
+            "id": "1aa593f981",
+            "value": "construir una casa sin un plano espec\u00edfico.",
+            "start": 424.85199999999975,
+            "end": 427.28999999999974
+          }
+        ]
+      },
+      {
+        "node_id": "37c92b4201",
+        "fragments": [
+          {
+            "id": "1ce65437bd",
+            "value": "En segundo lugar, no se pueden usar tipos",
+            "start": 427.3149999999997,
+            "end": 429.0799999999997
+          },
+          {
+            "id": "efbbae0ae1",
+            "value": "gen\u00e9ricos en bloques catch. Esto es como intentar",
+            "start": 429.1489999999997,
+            "end": 431.7269999999997
+          },
+          {
+            "id": "fc12971a7a",
+            "value": "atrapar un pez sin saber qu\u00e9 tipo de red usar.",
+            "start": 431.8079999999997,
+            "end": 434.4669999999997
+          }
+        ]
+      },
+      {
+        "node_id": "8229d0be8a",
+        "fragments": [
+          {
+            "id": "e3bb0132a0",
+            "value": "En este ejemplo, intentamos definir una clase",
+            "start": 434.4919999999997,
+            "end": 436.56999999999965
+          },
+          {
+            "id": "3625328adc",
+            "value": "gen\u00e9rica `MyException` que extiende `Exception`.",
+            "start": 436.6399999999997,
+            "end": 440.1229999999997
+          },
+          {
+            "id": "0ffc581fe3",
+            "value": "Sin embargo, esto no compilar\u00e1 debido a la erasure",
+            "start": 440.1239999999997,
+            "end": 443.26899999999966
+          },
+          {
+            "id": "ba2630a160",
+            "value": "de tipos en Java. La erasure de tipos elimina la",
+            "start": 443.33899999999966,
+            "end": 446.0559999999997
+          },
+          {
+            "id": "614dacaf05",
+            "value": "informaci\u00f3n de tipo en tiempo de compilaci\u00f3n, lo",
+            "start": 446.1019999999997,
+            "end": 449.0859999999997
+          },
+          {
+            "id": "1c8592453c",
+            "value": "que significa que no se puede crear una excepci\u00f3n",
+            "start": 449.15599999999966,
+            "end": 451.19899999999967
+          },
+          {
+            "id": "cc095c482b",
+            "value": "gen\u00e9rica. Este ejemplo ilustra una de las",
+            "start": 451.26899999999966,
+            "end": 453.5559999999997
+          },
+          {
+            "id": "0c08ea4f71",
+            "value": "limitaciones de los Generics en Java.",
+            "start": 453.6259999999997,
+            "end": 455.6229999999997
+          }
+        ]
+      },
+      {
+        "node_id": "3ba38556ed",
+        "fragments": [
+          {
+            "id": "31b322e8d7",
+            "value": "\u00bfTe has preguntado c\u00f3mo esta caracter\u00edstica puede",
+            "start": 455.6479999999997,
+            "end": 457.7609999999997
+          },
+          {
+            "id": "9a9f3ea143",
+            "value": "afectar tus decisiones al dise\u00f1ar el sistema ATM?",
+            "start": 457.8309999999997,
+            "end": 460.5129999999997
+          },
+          {
+            "id": "7bdf9325c2",
+            "value": "Es importante considerar estas limitaciones al",
+            "start": 460.51399999999967,
+            "end": 463.32199999999966
+          },
+          {
+            "id": "c4b3eeeb77",
+            "value": "planificar tu arquitectura.",
+            "start": 463.3919999999997,
+            "end": 465.02899999999966
+          }
+        ]
+      },
+      {
+        "node_id": "3ab04459cd",
+        "fragments": [
+          {
+            "value": "#### Aplicaci\u00f3n en JavaBank ATM System"
+          },
+          {
+            "id": "6cdf2bcc52",
+            "value": "Ahora, veamos c\u00f3mo podemos aplicar estos conceptos",
+            "start": 465.05399999999963,
+            "end": 467.7009999999996
+          },
+          {
+            "id": "bfcaabdaea",
+            "value": "en el sistema ATM de JavaBank.",
+            "start": 467.78199999999964,
+            "end": 469.69799999999964
+          }
+        ]
+      },
+      {
+        "node_id": "ed367b0137",
+        "fragments": [
+          {
+            "id": "a2f2d6cc76",
+            "value": "\u00bfPor qu\u00e9 no aplicar Generics en nuestro sistema",
+            "start": 469.7229999999996,
+            "end": 471.8819999999996
+          },
+          {
+            "id": "74719eea06",
+            "value": "ATM? Usar Generics para crear una clase base para",
+            "start": 472.0449999999996,
+            "end": 475.13299999999964
+          },
+          {
+            "id": "30650a23e4",
+            "value": "transacciones, como dep\u00f3sitos y retiros, podr\u00eda",
+            "start": 475.21499999999963,
+            "end": 477.93099999999964
+          },
+          {
+            "id": "ebee76b206",
+            "value": "ser \u00fatil. Esto es como tener un sistema de gesti\u00f3n",
+            "start": 478.01299999999964,
+            "end": 480.6709999999996
+          },
+          {
+            "id": "a4b855febf",
+            "value": "que puede manejar cualquier tipo de transacci\u00f3n",
+            "start": 480.74099999999964,
+            "end": 482.6679999999996
+          },
+          {
+            "id": "e71c22b9ea",
+            "value": "financiera.",
+            "start": 482.7379999999996,
+            "end": 483.9799999999996
+          }
+        ]
+      },
+      {
+        "node_id": "d4f66ea0d4",
+        "fragments": [
+          {
+            "id": "e72cd9f8f1",
+            "value": "La clase `Transaction` es una clase gen\u00e9rica que",
+            "start": 484.0049999999996,
+            "end": 486.3849999999996
+          },
+          {
+            "id": "5965035e32",
+            "value": "puede manejar cualquier tipo de detalle,",
+            "start": 486.4659999999996,
+            "end": 488.3009999999996
+          },
+          {
+            "id": "9b06999863",
+            "value": "representado por `T`. La variable privada `detail`",
+            "start": 488.6139999999996,
+            "end": 491.3889999999996
+          },
+          {
+            "id": "f0f79e8a9b",
+            "value": "almacena este dato. El constructor toma un",
+            "start": 491.5169999999996,
+            "end": 493.8729999999996
+          },
+          {
+            "id": "2b268823bf",
+            "value": "par\u00e1metro de tipo `T` y lo asigna a `detail`. Los",
+            "start": 493.9659999999996,
+            "end": 496.8339999999996
+          },
+          {
+            "id": "64d2318ae9",
+            "value": "m\u00e9todos `getDetail` y `setDetail` permiten obtener",
+            "start": 496.9269999999996,
+            "end": 499.5279999999996
+          },
+          {
+            "id": "b61ddee4ed",
+            "value": "y establecer este valor. Esta clase es \u00fatil para",
+            "start": 499.5969999999996,
+            "end": 502.2679999999996
+          },
+          {
+            "id": "fa27b56619",
+            "value": "manejar transacciones con diferentes tipos de",
+            "start": 502.3259999999996,
+            "end": 504.17199999999957
+          },
+          {
+            "id": "205ba40274",
+            "value": "detalles, como montos num\u00e9ricos o descripciones",
+            "start": 504.2299999999996,
+            "end": 506.7259999999996
+          },
+          {
+            "id": "f0e926290c",
+            "value": "textuales, de manera segura y flexible.",
+            "start": 506.7959999999996,
+            "end": 509.54699999999957
+          }
+        ]
+      },
+      {
+        "node_id": "d3313968f1",
+        "fragments": [
+          {
+            "id": "772a875c2a",
+            "value": "Esto permite que `Transaction` maneje cualquier",
+            "start": 509.57199999999955,
+            "end": 511.58099999999956
+          },
+          {
+            "id": "35b4d58783",
+            "value": "tipo de detalle, desde montos num\u00e9ricos hasta",
+            "start": 511.67299999999955,
+            "end": 514.1229999999996
+          },
+          {
+            "id": "29242b52eb",
+            "value": "descripciones textuales. Es como tener un diario",
+            "start": 514.1809999999996,
+            "end": 516.8279999999995
+          },
+          {
+            "id": "8ccbcf2b72",
+            "value": "que puede registrar cualquier tipo de evento.",
+            "start": 516.8859999999995,
+            "end": 519.1849999999995
+          }
+        ]
+      },
+      {
+        "node_id": "3cc3dfe593",
+        "fragments": [
+          {
+            "id": "d3da25e254",
+            "value": "Podr\u00edas mejorar la clase `ATM` para manejar listas",
+            "start": 519.2099999999995,
+            "end": 521.9039999999994
+          },
+          {
+            "id": "c2536a1e6e",
+            "value": "de transacciones gen\u00e9ricas. Esto te da la",
+            "start": 521.9619999999994,
+            "end": 524.2369999999995
+          },
+          {
+            "id": "c75f12eac4",
+            "value": "flexibilidad de agregar nuevas funcionalidades en",
+            "start": 524.3299999999995,
+            "end": 526.3849999999994
+          },
+          {
+            "id": "e541b7d88a",
+            "value": "el futuro sin comprometer la seguridad del tipo.",
+            "start": 526.4549999999995,
+            "end": 529.5659999999995
+          }
+        ]
+      },
+      {
+        "node_id": "f46db60914",
+        "fragments": [
+          {
+            "id": "74882da277",
+            "value": "La clase `ATM` maneja una lista de transacciones",
+            "start": 529.5909999999994,
+            "end": 532.2849999999994
+          },
+          {
+            "id": "57973bc6ed",
+            "value": "gen\u00e9ricas utilizando `Transaction&lt;?&gt;`. La",
+            "start": 532.3539999999995,
+            "end": 535.1289999999995
+          },
+          {
+            "id": "841b278fb7",
+            "value": "lista `transactions` puede contener transacciones",
+            "start": 535.2099999999995,
+            "end": 537.3809999999994
+          },
+          {
+            "id": "a81a2d4879",
+            "value": "de cualquier tipo, gracias al comod\u00edn (`?`). El",
+            "start": 537.4389999999994,
+            "end": 543.3719999999994
+          },
+          {
+            "id": "6936f5bfa4",
+            "value": "m\u00e9todo `addTransaction` permite agregar una",
+            "start": 543.4649999999995,
+            "end": 545.7869999999995
+          },
+          {
+            "id": "db88f4a00d",
+            "value": "transacci\u00f3n a la lista, y el m\u00e9todo",
+            "start": 545.8679999999995,
+            "end": 547.4819999999994
+          },
+          {
+            "id": "4510903d1c",
+            "value": "`getTransactions` devuelve la lista de",
+            "start": 547.5519999999995,
+            "end": 549.6759999999995
+          },
+          {
+            "id": "4fcf9d7f7e",
+            "value": "transacciones. Este dise\u00f1o proporciona",
+            "start": 549.7579999999995,
+            "end": 551.7199999999995
+          },
+          {
+            "id": "7e0d30d687",
+            "value": "flexibilidad para manejar diferentes tipos de",
+            "start": 551.8129999999994,
+            "end": 553.7169999999994
+          },
+          {
+            "id": "a2bd7739dc",
+            "value": "transacciones en un sistema ATM, permitiendo",
+            "start": 553.8099999999995,
+            "end": 556.8169999999994
+          },
+          {
+            "id": "ce8f14441d",
+            "value": "futuras expansiones sin comprometer la seguridad",
+            "start": 556.8979999999995,
+            "end": 559.1509999999994
+          },
+          {
+            "id": "d10c7d434e",
+            "value": "del tipo.",
+            "start": 559.1969999999994,
+            "end": 559.9169999999995
+          }
+        ]
+      },
+      {
+        "node_id": "68a2d18ad9",
+        "fragments": [
+          {
+            "id": "680c89c59f",
+            "value": "\u00bfC\u00f3mo podr\u00edas usar esta flexibilidad para agregar",
+            "start": 559.9419999999994,
+            "end": 562.1599999999994
+          },
+          {
+            "id": "b82702c942",
+            "value": "funcionalidades futuras sin comprometer la",
+            "start": 562.2409999999994,
+            "end": 564.1099999999994
+          },
+          {
+            "id": "de94efacf7",
+            "value": "seguridad del tipo? Piensa en c\u00f3mo podr\u00edas",
+            "start": 564.1799999999995,
+            "end": 566.8269999999994
+          },
+          {
+            "id": "3365004c84",
+            "value": "expandir el sistema para incluir nuevas",
+            "start": 566.9309999999995,
+            "end": 568.6379999999995
+          },
+          {
+            "id": "5864546d62",
+            "value": "caracter\u00edsticas.",
+            "start": 568.7189999999995,
+            "end": 569.7869999999995
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "id": "a2abcb0199",
+        "type": "code_challenge",
+        "content": "public class CuentaBancaria<T> {\n    private T cuenta;\n\n    public CuentaBancaria(T cuenta) {\n        this.cuenta = cuenta;\n    }\n\n    public void mostrarDetalles() {\n        // Implementa la l\u00f3gica para mostrar los detalles de la cuenta\n    }\n}\n\npublic class JavaBank {\n    public static void main(String[] args) {\n        // Crea instancias de CuentaBancaria para diferentes tipos de cuentas\n        // y llama al m\u00e9todo mostrarDetalles para cada una de ellas\n    }\n}\n",
+        "lang": "java",
+        "code_challenge_id": "cm4wzf9660000poggzdjnp5s4",
+        "timestamps": [
+          {
+            "start": 36.598,
+            "end": 73.1,
+            "metadata": {
+              "loc": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1e9599f6e6",
+        "type": "code",
+        "content": "public class Entry<K, V> {\n    private K key;\n    private V value;\n\n    public Entry(K key, V value) {\n        this.key = key;\n        this.value = value;\n    }\n\n    public K getKey() { return key; }\n    public V getValue() { return value; }\n\n    public void setKey(K key) { this.key = key; }\n    public void setValue(V value) { this.value = value; }\n}\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 95.65100000000002,
+            "end": 102.30400000000003,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 102.93000000000002,
+            "end": 106.11200000000002,
+            "metadata": {
+              "loc": "2,3"
+            }
+          },
+          {
+            "start": 106.62200000000003,
+            "end": 111.32400000000003,
+            "metadata": {
+              "loc": "2,3"
+            }
+          },
+          {
+            "start": 111.71900000000002,
+            "end": 117.76800000000003,
+            "metadata": {
+              "loc": "5,6,7,8"
+            }
+          },
+          {
+            "start": 118.16300000000003,
+            "end": 124.17600000000002,
+            "metadata": {
+              "loc": "15,16,17,18"
+            }
+          },
+          {
+            "start": 124.67600000000002,
+            "end": 130.10900000000004,
+            "metadata": {
+              "loc": "8"
+            }
+          },
+          {
+            "start": 106.62200000000003,
+            "end": 111.32400000000003,
+            "metadata": {
+              "loc": "2,3"
+            }
+          },
+          {
+            "start": 111.71900000000002,
+            "end": 117.76800000000003,
+            "metadata": {
+              "loc": "5,6,7,8"
+            }
+          },
+          {
+            "start": 118.16300000000003,
+            "end": 124.17600000000002,
+            "metadata": {
+              "loc": "15,16,17,18"
+            }
+          },
+          {
+            "start": 124.67600000000002,
+            "end": 130.10900000000004,
+            "metadata": {
+              "loc": "8"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6367b2da0f",
+        "type": "code",
+        "content": "public class NonGenericEntry {\n    private Object key;\n    private Object value;\n\n    public NonGenericEntry(Object key, Object value) {\n        this.key = key;\n        this.value = value;\n    }\n\n    public Object getKey() { return key; }\n    public Object getValue() { return value; }\n\n    public void setKey(Object key) { this.key = key; }\n    public void setValue(Object value) { this.value = value; }\n}\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 142.88400000000004,
+            "end": 146.92400000000004,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 147.33100000000005,
+            "end": 150.87200000000004,
+            "metadata": {
+              "loc": "15"
+            }
+          },
+          {
+            "start": 157.62900000000005,
+            "end": 162.29600000000005,
+            "metadata": {
+              "loc": "15"
+            }
+          },
+          {
+            "start": 162.74900000000005,
+            "end": 164.42100000000005,
+            "metadata": {
+              "loc": "15"
+            }
+          },
+          {
+            "start": 569.7869999999995,
+            "end": 3.367,
+            "metadata": {
+              "loc": "15"
+            }
+          },
+          {
+            "start": 168.75100000000003,
+            "end": 177.62100000000004,
+            "metadata": {
+              "loc": "15"
+            }
+          }
+        ]
+      },
+      {
+        "id": "4aa9555bda",
+        "type": "code",
+        "content": "Entry<String, Integer> grade = new Entry<>(\"Alice\", 85);\nEntry<String, String> student = new Entry<>(\"Alice\", \"Computer Science\");\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 186.54100000000005,
+            "end": 190.12900000000005,
+            "metadata": {
+              "loc": "1,2"
+            }
+          },
+          {
+            "start": 190.52400000000006,
+            "end": 198.32600000000005,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 198.83600000000004,
+            "end": 208.92500000000007,
+            "metadata": {
+              "loc": "2"
+            }
+          },
+          {
+            "start": 209.36600000000004,
+            "end": 217.51700000000005,
+            "metadata": {
+              "loc": "1,2"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bd19598c90",
+        "type": "code",
+        "content": "public <T> void printArray(T[] array) {\n    for (T element : array) {\n        System.out.println(element);\n    }\n}\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 231.89500000000007,
+            "end": 238.62900000000008,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 239.08200000000008,
+            "end": 245.66400000000007,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 246.14000000000007,
+            "end": 249.50700000000006,
+            "metadata": {
+              "loc": "5"
+            }
+          },
+          {
+            "start": 250.00600000000006,
+            "end": 259.34100000000007,
+            "metadata": {
+              "loc": "1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f76709bc2e",
+        "type": "code",
+        "content": "public void printStringArray(String[] array) {\n    for (String element : array) {\n        System.out.println(element);\n    }\n}\n\npublic void printIntegerArray(Integer[] array) {\n    for (Integer element : array) {\n        System.out.println(element);\n    }\n}\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 267.797,
+            "end": 270.351,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 276.423,
+            "end": 278.083,
+            "metadata": {
+              "loc": "2"
+            }
+          },
+          {
+            "start": 278.327,
+            "end": 280.09200000000004,
+            "metadata": {
+              "loc": "3"
+            }
+          },
+          {
+            "start": 276.423,
+            "end": 278.083,
+            "metadata": {
+              "loc": "4"
+            }
+          },
+          {
+            "start": 270.595,
+            "end": 271.75600000000003,
+            "metadata": {
+              "loc": "7"
+            }
+          },
+          {
+            "start": 276.423,
+            "end": 278.083,
+            "metadata": {
+              "loc": "8"
+            }
+          },
+          {
+            "start": 278.327,
+            "end": 280.09200000000004,
+            "metadata": {
+              "loc": "3"
+            }
+          },
+          {
+            "start": 276.423,
+            "end": 278.083,
+            "metadata": {
+              "loc": "4"
+            }
+          },
+          {
+            "start": 569.7869999999995,
+            "end": 14.71,
+            "metadata": {
+              "loc": "4"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1b9ddb871a",
+        "type": "code",
+        "content": "List<? extends Number> numberList = new ArrayList<Integer>();\nList<? super Integer> superIntegerList = new ArrayList<Number>();\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 316.2879999999999,
+            "end": 320.0149999999999,
+            "metadata": {
+              "loc": "1,2"
+            }
+          },
+          {
+            "start": 320.3979999999999,
+            "end": 333.6569999999999,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 334.1669999999999,
+            "end": 347.1939999999999,
+            "metadata": {
+              "loc": "2"
+            }
+          },
+          {
+            "start": 347.69299999999987,
+            "end": 352.3259999999999,
+            "metadata": {
+              "loc": "1,2"
+            }
+          }
+        ]
+      },
+      {
+        "id": "d29e2a361a",
+        "type": "code",
+        "content": "public void processNumberList(List<? extends Number> list) {\n    for (Number number : list) {\n        System.out.println(number);\n    }\n}\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 365.33299999999986,
+            "end": 377.68599999999986,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 378.57999999999987,
+            "end": 380.1009999999999,
+            "metadata": {
+              "loc": "2"
+            }
+          },
+          {
+            "start": 380.23999999999984,
+            "end": 381.88899999999984,
+            "metadata": {
+              "loc": "3"
+            }
+          },
+          {
+            "start": 382.38799999999986,
+            "end": 391.43199999999985,
+            "metadata": {
+              "loc": "5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6a481323e5",
+        "type": "code",
+        "content": "// Ejemplo de error debido a Type Erasure\npublic class MyException<T> extends Exception {\n    public MyException(T message) {\n        super(message.toString());\n    }\n}\n// No compilar\u00e1 debido a type erasure\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 434.4919999999997,
+            "end": 440.1229999999997,
+            "metadata": {
+              "loc": "2"
+            }
+          },
+          {
+            "start": 440.5759999999997,
+            "end": 444.1979999999997,
+            "metadata": {
+              "loc": "7"
+            }
+          },
+          {
+            "start": 444.70899999999966,
+            "end": 455.6229999999997,
+            "metadata": {
+              "loc": "3,4,5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "be68b1052c",
+        "type": "code",
+        "content": "public class Transaction<T> {\n    private T detail;\n\n    public Transaction(T detail) {\n        this.detail = detail;\n    }\n\n    public T getDetail() { return detail; }\n\n    public void setDetail(T detail) { this.detail = detail; }\n}\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 484.0049999999996,
+            "end": 489.7519999999996,
+            "metadata": {
+              "loc": "1"
+            }
+          },
+          {
+            "start": 490.1349999999996,
+            "end": 492.5269999999996,
+            "metadata": {
+              "loc": "2"
+            }
+          },
+          {
+            "start": 492.9329999999996,
+            "end": 496.2879999999996,
+            "metadata": {
+              "loc": "4,5,6"
+            }
+          },
+          {
+            "start": 496.7409999999996,
+            "end": 500.7119999999996,
+            "metadata": {
+              "loc": "11,12"
+            }
+          },
+          {
+            "start": 501.1529999999996,
+            "end": 509.54699999999957,
+            "metadata": {
+              "loc": "11"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1fde3ed7a4",
+        "type": "code",
+        "content": "public class ATM {\n    private List<Transaction<?>> transactions = new ArrayList<>();\n\n    public void addTransaction(Transaction<?> transaction) {\n        transactions.add(transaction);\n    }\n\n    public List<Transaction<?>> getTransactions() {\n        return transactions;\n    }\n}\n",
+        "lang": "java",
+        "timestamps": [
+          {
+            "start": 529.5909999999994,
+            "end": 535.3959999999994,
+            "metadata": {
+              "loc": "11"
+            }
+          },
+          {
+            "start": 543.3259999999995,
+            "end": 546.9249999999994,
+            "metadata": {
+              "loc": "11"
+            }
+          },
+          {
+            "start": 547.0409999999995,
+            "end": 550.5469999999995,
+            "metadata": {
+              "loc": "11"
+            }
+          }
+        ]
+      }
+    ],
+    "audio_file": "https://ms-course-generator-prod.static.platzi.com/projects/java-course-full/6742e42333-ee2e90cf2b/audio/speech-final-v1734713230.mp3",
+    "timestamp": 1734713231.2486095,
+    "errors": [
+      {
+        "message": "Id: 6367b2da0f Resource timestamp start is greater than end: 569.7869999999995 - 3.367",
+        "error_code": "resource_timestamp",
+        "node_id": "6367b2da0f"
+      },
+      {
+        "message": "Id: f76709bc2e Resource timestamp start is greater than end: 569.7869999999995 - 14.71",
+        "error_code": "resource_timestamp",
+        "node_id": "f76709bc2e"
+      }
+    ]
+  }
+}
